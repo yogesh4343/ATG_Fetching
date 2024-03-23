@@ -43,6 +43,8 @@ const NewCardContainer = () => {
   const { Bio, avatar, createdAt, id, jobTitle, profile } = singleUser;
   const { username, email, firstName, lastName } = { ...profile };
 
+
+
   let newArr = []
   if (userDetail.data == undefined) {
     console.log("userDetail", userDetail.data);
@@ -86,6 +88,14 @@ for (let i = 1; i < Math.ceil(totalPosts/postsPerPage); i++) {
    })}
 
 
+
+
+
+
+
+
+
+
   const cardClick= ()=>{
     console.log("cardClick")
   }
@@ -121,6 +131,9 @@ for (let i = 1; i < Math.ceil(totalPosts/postsPerPage); i++) {
         </div>
       </div>
 
+
+
+
       <div className="">
         {userCardClick === true ? (
           <div className="">
@@ -135,6 +148,10 @@ for (let i = 1; i < Math.ceil(totalPosts/postsPerPage); i++) {
       </div>
       
           </div>
+
+
+
+
 
 </>
 }
