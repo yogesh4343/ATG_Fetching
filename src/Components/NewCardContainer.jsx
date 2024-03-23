@@ -43,8 +43,6 @@ const NewCardContainer = () => {
   const { Bio, avatar, createdAt, id, jobTitle, profile } = singleUser;
   const { username, email, firstName, lastName } = { ...profile };
 
-
-
   let newArr = []
   if (userDetail.data == undefined) {
     console.log("userDetail", userDetail.data);
@@ -87,11 +85,13 @@ for (let i = 1; i < Math.ceil(totalPosts/postsPerPage); i++) {
     }}>{curEl}</span> </li>
    })}
 
+
   const cardClick= ()=>{
     console.log("cardClick")
   }
+
   return (
-    <div className="flex flex-col md:justify-center   ">
+    <div className="flex flex-col md:justify-center  text-center ">
 
 {status == "loading"  ? ( <Loader />
           ) 
@@ -120,8 +120,6 @@ for (let i = 1; i < Math.ceil(totalPosts/postsPerPage); i++) {
 
         </div>
       </div>
-
-
 
       <div className="">
         {userCardClick === true ? (
