@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import UserHeading from './Assets/UserHeading';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+import ListGridLine from './Components/ListGridLine';
+import NavBar from './Components/NavBar';
+import NewCardContainer from './Components/NewCardContainer';
+import Testnomials from './Components/Testnomials';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App ">
+    <NavBar />
+    <Header />
+    <UserHeading font="[40px]" name="User Heading" text="center" />
+    <ListGridLine />
+    <NewCardContainer />
+    <Testnomials />
+    <Footer />
     </div>
   );
 }
